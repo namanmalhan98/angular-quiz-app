@@ -1,0 +1,43 @@
+<div class="QustionAndAnsList">
+  <h3 style="display: flex;
+  justify-content: space-around;"> Datastructure Quiz</h3>
+  <div *ngFor="let question of questionsArray;let i = index;" class="QustionAndAnsLists" >
+    <th>{{question.id}} {{question.question}}</th>
+
+    <ul class="answers-list" style="list-style: none; margin-top: 9px;" >
+      <li  style="margin: 5px;">
+        <div class="questonnopt">
+
+          <input type="radio" name="group{{i}}" [value]="question.option1"> 
+           {{question.option1}}<br>
+
+        </div>
+      </li>
+      <li style="margin: 5px;">
+        <div class="questonnopt">
+
+          <input type="radio" name="group{{i}}" [value]="question.option2">
+            {{question.option2}}<br>
+
+        </div>
+      </li>
+      <li style="margin: 5px;">
+        <div class="questonnopt">
+
+          <input type="radio" name="group{{i}}" [value]="question.option3">
+          {{question.option3}}<br>
+
+        </div>
+      </li>
+      <li style="margin: 5px;">
+        <div class="questonnopt">
+
+          <input type="radio" name="group{{i}}" [value]="question.option4">
+          {{question.option4}}<br>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+  <button type="submit" class=" btn-primary  " (click)=" submit()">Submit</button>
+</div>

@@ -1,0 +1,26 @@
+.btn-primary {
+  display: flex;
+  /* margin: 1em 0em 1em 9em; */
+
+}
+
+.QustionAndAnsList  {
+
+  border: 2px solid;
+  margin: 2em 1em 2em 3em;
+padding: 2em 8em 2em 8em;
+  background: aliceblue;
+}
+.QustionAndAnsLists  {
+
+  border: 2px solid;
+  margin: 2em 2em 2em 2em;
+  padding: 2em 2em 2em 14em;
+  background: #f8f8f8;;
+}
+
+.btn-primary {
+  cursor: pointer;
+  padding:  1em 5em 1em 5em;
+  margin:1em 1em 1em 30em;
+}

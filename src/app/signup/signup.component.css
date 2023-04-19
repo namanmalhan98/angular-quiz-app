@@ -1,0 +1,333 @@
+.form {
+    padding: 2px;
+
+    margin: 2px;
+}
+
+.card-body {
+    margin: 2em 17em 5em 17em;
+    background: beige;
+    padding: 3em 2em 1em 3em;
+}
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+
+    cursor: pointer;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 1em 1em 15em;
+}
+
+.h1,
+h1 {
+    font-size: 2.0em;
+    text-align: center;
+}
+
+.seperator {
+    text-align: center;
+    color: 2px solid black;
+}
+
+    /* Mobile view */
+
+@media only screen and (max-width: 480px) and (max-width: 767px) {
+    body {
+        background-color: rgb(86, 198, 236);
+    }
+
+    .card-body {
+        margin: 0px 0px 0px 0px;
+        background: beige;
+        padding: 0px 0px 0px 0px;
+    }
+
+    hr {
+        margin: -10px;
+        color: inherit;
+        background-color: currentColor;
+        border: 0;
+        opacity: 0.25;
+    }
+
+    .btn-primary[_ngcontent-serverApp-c72] {
+        cursor: pointer;
+        padding: 8px 2px 6px 7px;
+        margin: 0em 7em 0em 9em;
+    }
+
+    
+
+    @media (min-width: 280px) and (max-width: 653px) {
+       
+        .card-body {
+            margin: 0px 0px 0px 0px;
+            background: beige;
+            padding: 0px 0px 0px 9px;
+        }
+    
+        hr {
+            margin: -10px;
+            color: inherit;
+            background-color: currentColor;
+            border: 0;
+            opacity: 0.25;
+        }
+    
+        .btn-primary[_ngcontent-serverApp-c72]{
+            cursor: pointer;
+            padding: 8px 2px 6px 7px;
+            margin: 0em 2em 0em 3em;
+        }
+        
+        @media (min-width: 360px) and (max-width: 740px) {
+          
+            .btn-primary[_ngcontent-serverApp-c72] {
+                cursor: pointer;
+                padding: 8px 2px 6px 7px;
+                margin: 0em 2em 0em 6em;
+            }
+        } 
+
+
+        @media (min-width: 375px) and (max-width: 667px) {
+          
+            .btn-primary[_ngcontent-serverApp-c72] {
+                cursor: pointer;
+                padding: 8px 2px 6px 7px;
+                margin: 0em 2em 0em 7em;
+            }
+        } 
+    
+    } 
+
+    @media (min-width: 393px) and (max-width: 851px) {
+       
+        .btn-primary[_ngcontent-serverApp-c72] {
+            cursor: pointer;
+            padding: 8px 2px 6px 7px;
+            margin: 0em 2em 0em 7em;
+        }
+    } 
+
+    @media (min-width: 412px) and (max-width: 914px) {
+        .btn-primary[_ngcontent-serverApp-c72] {
+            cursor: pointer;
+            padding: 8px 2px 6px 7px;
+            margin: 0em 2em 0em 7.5em;
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+
+    .form {
+        padding: 2px;
+
+        margin: 2px;
+    }
+
+    .card-body {
+        margin: 1px 0px 0px -4px;
+    background: beige;
+    padding: 0px 1px 0px 3px;
+    }
+
+    hr {
+        margin: -10px;
+        color: inherit;
+        background-color: currentColor;
+        border: 0;
+        opacity: 0.25;
+    }
+
+    .btn-primary[_ngcontent-serverApp-c72] {
+        cursor: pointer;
+        padding: 1px 24px 6px 7px;
+        margin: 0em 8em 0em 11em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .form {
+        padding: 2px;
+
+        margin: 2px;
+    }
+
+    .card-body {
+        margin: 0px 0px 0px 0px;
+        background: beige;
+        padding: 118px 1px 128px 2px;
+    }
+
+    hr {
+        margin: -10px;
+        color: inherit;
+        background-color: currentColor;
+        border: 0;
+        opacity: 0.25;
+    }
+
+    .btn-primary {
+        cursor: pointer;
+        padding: 8px 2px 6px 7px;
+        margin: 0em 15em 0em 18em;
+    }
+
+    @media (min-width: 912px) and (max-width: 1368px) {
+        .form {
+            padding: 2px;
+
+            margin: 2px;
+        }
+
+        .card-body {
+            margin: 1px -96px -35px -105px;
+            background: beige;
+            height: 85em;
+        }
+
+        hr {
+            margin: -10px;
+            color: inherit;
+            background-color: currentColor;
+            border: 0;
+            opacity: 0.25;
+        }
+
+        .btn-primary {
+            cursor: pointer;
+            padding: 8px 2px 6px 7px;
+            margin: 2em 16em 2em 23em;
+        }
+    }
+
+    @media (min-width: 1024px)  {
+ 
+        .form {
+            padding: 2px;
+        
+            margin: 2px;
+        }
+        
+        .card-body {
+            margin: 2em 1em 5em 1em;
+            background: beige;
+            padding: 3em 2em 1em 3em;
+            height: 62em;
+
+        }
+
+        .btn-primary {
+        
+            cursor: pointer;
+            padding: 0em 2em 0em 2em;
+            margin: 0em 1em 0em 20em;
+        }
+        
+        .divider-text {
+            position: relative;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .divider-text span {
+            padding: 7px;
+            font-size: 12px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .divider-text:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            top: 55%;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .btn-facebook {
+            background-color: #405D9D;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn-twitter {
+            background-color: #42AEEC;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+             
+        .h1,
+        h1 {
+            font-size: 2.0em;
+            text-align: center;
+        }
+        
+        .seperator {
+            text-align: center;
+            color: 2px solid black;
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 800px) {
+    .card-body {
+        margin: 2em 17em 5em 17em;
+        background: beige;
+        padding: 3em 2em 1em 3em;
+        height: 62em;
+
+    }
+
+    .btn-primary[_ngcontent-serverApp-c72] {
+    
+        cursor: pointer;
+        padding: 1em 2em 1em 2em;
+        margin: 1em 1em 1em 10em;
+    }
+}

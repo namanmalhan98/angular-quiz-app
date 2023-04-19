@@ -1,0 +1,67 @@
+<head>
+
+</head>
+<div class="container">
+  <br>
+  <hr>
+
+  <div class="card bg-light">
+    <article class="card-body  ">
+      <h1> Registration Form </h1>
+      <h4 class="card-title mt-3 text-center">Create Account</h4>
+      <p class="text-center">Get started with your free account</p>
+      <p>
+        <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a><br><br>
+        <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
+          facebook</a>
+      </p>
+      <p class="seperator">
+        <span class>OR</span>
+      </p>
+      <form class="form" #registForm="ngForm" (ngSubmit)="getValues()">
+        <div class="form-group">
+          <label for="exampleInputName1">Name </label> <br><br>
+          <input type="text" [(ngModel)]="username" name="userName" class="form-control" id="exampleInputName"
+            aria-describedby="emailHelp" placeholder="Enter Your name">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label><br>
+          <br>
+          <input type="email" [(ngModel)]="email" name="userEmail" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="Enter email">
+        </div><br>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Password</label><br>
+          <br>
+          <input type="password" [(ngModel)]="password" name="userpassword" class="form-control"
+            id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Enter password">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Confirm Password</label><br>
+          <br>
+          <input type="confirmpassword" [(ngModel)]="confirmpassword" name="userconfirmpassword" class="form-control"
+            id="exampleInputconfirmpassword" aria-describedby="confirmpasswordHelp" placeholder="Confirm your password">
+        </div><br>
+
+        <div>
+          <mat-form-field appearance="fill">
+            <select matNativeControl [(ngModel)]="selectedsoftware" name="selectedSoftware">
+
+              <option *ngFor="let Software of Softwares" [value]="Software.value">
+
+                {{Software.viewValue}}
+              </option>
+            </select>
+          </mat-form-field>
+        </div><br>
+        <br>
+        <button type="submit" class=" btn-primary  " > Create
+          Account</button><br>
+        <p class="text-center">Have an account? <a routerLink="/login">Sign in</a> </p>
+      </form>
+    </article>
+  </div>
+</div>

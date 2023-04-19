@@ -1,0 +1,84 @@
+<head>
+    
+</head>
+<div class="container h-100" style="padding: 5em 25em 3em 26em ; background-color: dimgrey;" >
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src=""
+                        class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center form_container">
+                <form class="form" #registForm="ngForm" (ngSubmit)="onSubmit()">
+                    <h1> Login </h1>
+                    <div class="form-group">
+
+                        <label for="exampleInputEmail1">Email</label><br>
+
+                        <br>
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="email" [(ngModel)]="email" name="userEmail" class="form-control"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required >
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Password </label> <br><br>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input [type]="show ? 'text' :'password'" [(ngModel)]="userpassword" name="userPassword" class="form-control"
+                                id="exampleInputPassword" aria-describedby="passwordHelp"
+                                placeholder="Enter Your password" required>
+                                <!-- <button (click)="password()">{{show ? 'Show' : 'Hide'}}</button> -->
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <!-- <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Select Option</mat-label>
+                            <input type="text" matInput [formControl]="myControl" [MatAutocomplete]="auto">
+                            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                              <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option.name}}
+                              </mat-option>
+                            </mat-autocomplete>
+                          </mat-form-field>                  -->
+
+
+                          <form #f="ngForm">
+                            <mat-form-field>
+                                <input matInput  [matAutocomplete]="auto" >
+                            </mat-form-field>
+                        
+                            <mat-autocomplete #auto="matAutocomplete">
+                                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                    {{option.name}}
+                                </mat-option>
+                            </mat-autocomplete>
+                        
+                        </form>
+                        
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                        <button type="submit" class="btn login_btn"style="width: 8em;cursor: pointer;"  >
+                            Submit</button>
+                    </div><br>
+                </form>
+            </div>
+            <div class="mt-4">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account? <a routerLink="/signup" >Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center links">
+                    <a routerLink="/forgotPassword">Forgot your password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

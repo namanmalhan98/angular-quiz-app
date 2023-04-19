@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+  }
+  .userResult{
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+    padding: 2em;
+    background: whitesmoke;
+  }
